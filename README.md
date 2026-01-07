@@ -4,7 +4,7 @@ Perfect! Here's the updated README and the commands:
 
 **A fork of Storyboarder with the addition of AI-powered image generation.**
 
-Storytime takes the fast, simple storyboarding of Wonderunit's Storyboarder and adds integrated AI image generation. Sketch your idea with stick figures, then generate a stylized image from your sketch. The fastest path through ideation: from rough idea to polished animatic.
+Storytime takes the fast, simple storyboarding of Wonderunit's Storyboarder and adds integrated AI image generation. Sketch your idea with stick figures, then generate a stylized image from your sketch. The fastest path from sketch to screen.
 
 [![screenshot](https://user-images.githubusercontent.com/441117/27712058-4404e214-5cf3-11e7-8fa3-b88ae924d154.gif)](https://www.wonderunit.com/storyboarder)
 
