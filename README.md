@@ -2,16 +2,16 @@ Perfect! Here's the updated README and the commands:
 
 # Storytime
 
-**A fork of Storyboarder with AI-powered image generation built in.**
+**A fork of Storyboarder with the addition of AI-powered image generation.**
 
-Storytime takes the fast, simple storyboarding of Wonderunit's Storyboarder and adds integrated AI image generation. Sketch your idea with stick figures, hit 'g', and generate a stylized image from your sketch. The fastest path from rough idea to polished animatic.
+Storytime takes the fast, simple storyboarding of Wonderunit's Storyboarder and adds integrated AI image generation. Sketch your idea with stick figures, then generate a stylized image from your sketch. The fastest path through ideation: from rough idea to polished animatic.
 
 [![screenshot](https://user-images.githubusercontent.com/441117/27712058-4404e214-5cf3-11e7-8fa3-b88ae924d154.gif)](https://www.wonderunit.com/storyboarder)
 
 ## What's New in Storytime
 
-**AI Generation Integration**
-- Sketch rough ideas, generate reference images instantly
+**Image generation**
+- Sketch rough ideas, generate images instantly
 - Integrated ComfyUI support for local generation
 - ControlNet-powered sketch-to-image workflow
 - Hit `g` to generate, results import automatically
@@ -19,7 +19,7 @@ Storytime takes the fast, simple storyboarding of Wonderunit's Storyboarder and 
 
 **The Workflow:**
 1. Rough sketch with stick figures
-2. Press `g`, add a prompt ("cowboy on horseback in desert")
+2. Add a prompt ("cowboy on horseback in desert")
 3. AI generates photorealistic reference from your sketch
 4. Result imports as reference layer
 5. Continue boarding with proper lighting/composition reference
@@ -40,11 +40,11 @@ For ComfyUI integration:
 
 [Submit issues, bugs, ideas, suggestions here](https://github.com/danielcjones2021/storytime/issues)
 
-## It's Still Easy...
+## Storyboarder was easy, Storytime is even easier...
 
 1. Start a blank storyboard or open a Fountain screenplay
 2. Draw boards with mouse, Wacom, or any pen tablet
-3. Hit `g` to generate AI references from your sketches
+3. Generate AI references from your sketches
 4. Flip through boards, play it back, pitch it, iterate
 
 The original Storyboarder philosophy: don't get slowed down by complexity. You're here to tell stories fast.
@@ -112,7 +112,7 @@ No layers. No complexity. Board fast, generate references when needed, keep movi
 
 ## About This Fork
 
-Storytime is built on [Storyboarder by Wonderunit](https://github.com/wonderunit/storyboarder). The goal is to create the fastest possible workflow for modern storyboarding by integrating AI tools directly into the drawing interface. No switching apps, no manual import/export, no workflow interruption.
+Storytime is built on [Storyboarder by Wonderunit](https://github.com/wonderunit/storyboarder). The goal is to create the fastest possible workflow for modern storyboarding by integrating generative tools directly into the drawing interface. No switching apps, no manual import/export, no workflow interruption.
 
 If you want stable, production-ready software, use the original Storyboarder. If you want cutting edge integration and don't mind experimental builds, this is for you.
 
