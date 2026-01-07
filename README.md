@@ -1,31 +1,57 @@
-# Storyboarder
+Perfect! Here's the updated README and the commands:
 
-Storyboarder makes it easy to visualize a story as fast you can draw stick figures. Quickly draw to test if a story idea works. Create and show animatics to others. Express your story idea without making a movie.
+# Storytime
+
+**A fork of Storyboarder with AI-powered image generation built in.**
+
+Storytime takes the fast, simple storyboarding of Wonderunit's Storyboarder and adds integrated AI image generation. Sketch your idea with stick figures, hit 'g', and generate a stylized image from your sketch. The fastest path from rough idea to polished animatic.
 
 [![screenshot](https://user-images.githubusercontent.com/441117/27712058-4404e214-5cf3-11e7-8fa3-b88ae924d154.gif)](https://www.wonderunit.com/storyboarder)
 
-Whether you are a story artist, writer, director, in advertising, or just a person with an idea, you can use this to quickly make storyboards.
+## What's New in Storytime
+
+**AI Generation Integration**
+- Sketch rough ideas, generate reference images instantly
+- Integrated ComfyUI support for local generation
+- ControlNet-powered sketch-to-image workflow
+- Hit `g` to generate, results import automatically
+- Style prompts that carry across frames for consistency
+
+**The Workflow:**
+1. Rough sketch with stick figures
+2. Press `g`, add a prompt ("cowboy on horseback in desert")
+3. AI generates photorealistic reference from your sketch
+4. Result imports as reference layer
+5. Continue boarding with proper lighting/composition reference
+
+No context switching. No export/import dance. Sketch → Generate → Polish.
 
 ## Download
 
-### [Click here to download the latest release](https://wonderunit.com/storyboarder/)
+This is a development fork. To use:
+1. Clone this repo
+2. `npm install` (requires Node 16)
+3. `npm start`
 
-[PLEASE PLEASE PLEASE submit issues with bugs, ideas, suggestions, or any feedback! Thanks!](https://github.com/wonderunit/storyboarder/issues)
+For ComfyUI integration:
+- Install [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
+- Run ComfyUI on port 8000
+- Load the included workflow from `/ComfyUI-workflow/`
 
-Also, if this project seems interesting, could you press that star button at the top right? Thanks!!!!
+[Submit issues, bugs, ideas, suggestions here](https://github.com/danielcjones2021/storytime/issues)
 
-## It's easy...
+## It's Still Easy...
 
-1. Start a blank storyboard or open a Fountain screenplay.
-2. Start drawing boards using a mouse or wacom open. Or print out
-3. Flip through the boards, play it back, pitch it, make changes.
+1. Start a blank storyboard or open a Fountain screenplay
+2. Draw boards with mouse, Wacom, or any pen tablet
+3. Hit `g` to generate AI references from your sketches
+4. Flip through boards, play it back, pitch it, iterate
 
-Don't get slowed down by too many buttons or options. You're here to board stories, not make the next Moner Lisa.
-
-Works with Pens on any tablet or Cintiq or even a Microsoft Surface. Also works with a mouse.
+The original Storyboarder philosophy: don't get slowed down by complexity. You're here to tell stories fast.
 
 ## Features:
 
+**Original Storyboarder Features:**
 * Simple, Smooth Drawing
 * Super Simple Interface
 * Printed Worksheets
@@ -38,73 +64,85 @@ Works with Pens on any tablet or Cintiq or even a Microsoft Surface. Also works 
 * Guides to Help Drawing
 * Reference Layer
 * Onion Skin
-* Track changes
-* Collaborate on Github
-* Export to various Formats
+* Track Changes
+* Export to Various Formats
 
-## We have 4 brush types which are all you need to draw fast:
+**New AI Features:**
+* **Integrated AI Generation** - ComfyUI integration built in
+* **Sketch-to-Image** - ControlNet converts rough sketches to references
+* **Style Consistency** - Persistent style prompts across frames
+* **Hotkey Generation** - Press `g` for instant generation
+* **Local & Remote** - Supports both local ComfyUI and remote APIs
+* **Async Generation** - Keep boarding while images generate
+
+## Brushes (Same as Original):
 
 * **Light pencil** for roughing
 * **Pencil** for fast sketching
 * **Pen** for inking strong lines
-* **Brush** for filling in some shading
+* **Brush** for filling and shading
 
-You can also specificy 3 brush sizes for each type.
+No layers. No complexity. Board fast, generate references when needed, keep moving.
 
-Each brush has its own 5 color pallete. You can set all the colors as you like.
-
-There are no layers. Again, you're boarding story ideas. Managing layers creates so much unneeded complexity and UI mess. A board artist that uses layers probably voted for Trump - or paid way too much for "Pro" storyboard software.
-
-Made a mistake? You can erase that shit.
-
-You can undo and redo.
-
-Made a big mistake? You can clear the whole thing.
-
-If it's off center or too big or too small, you can shift your drawing around or scale it.
-
-Need a straight line? Hold shift while you're drawing and you got straight lines.
-
-## There are 5 guide overlays to toggle:
-
-*  Grid
-*  Center Marks
-*  Thirds
-*  Angles
-*  Onion skin (previous and next board in shot)
-
-## We got mad simple key commands:
+## Key Commands:
 
 * Light Pencil: <kbd>1</kbd>
 * Pencil: <kbd>2</kbd>
 * Pen: <kbd>3</kbd>
 * Brush: <kbd>4</kbd>
 * Eraser: <kbd>5</kbd>
+* **AI Generate: <kbd>g</kbd>** ← NEW
 * Clear: <kbd>Delete</kbd> or <kbd>Backspace</kbd>
 * Undo: <kbd>Cmd</kbd>+<kbd>z</kbd>
 * Redo: <kbd>Cmd</kbd>+<kbd>y</kbd>
 * Smaller Brush: <kbd>[</kbd>
 * Bigger Brush: <kbd>]</kbd>
-* Straight Lines: <kbd>Hold shift while drawing</kbd>
-* Move Contents: <kbd>Hold command</kbd>
+* Straight Lines: <kbd>Hold Shift</kbd>
+* Move Contents: <kbd>Hold Cmd</kbd>
 * Scale Contents: <kbd>Cmd</kbd>+<kbd>Option</kbd>
-* Color Pick: <kbd>Hold Option</kbd>
 
-## FAQ
+## Development Roadmap
 
-**"CHARLES, I RESPEKT UR OPINIONATED SOFTWARE DESIGN GANGSTER, BUT I NEED TO POLISH MY DRAWINGS TIGHTER."**
-No problem, needy bruh. You can click a button to edit in photoshop, and when you save, it updates in Storyboarder.
+**Current:** ComfyUI integration, basic sketch-to-image generation
+**Next:**
+- Additional AI backends (Replicate, Stability AI)
+- Shot matching for style consistency
+- Batch generation across multiple boards
+- Improved pressure sensitivity (Wacom compatibility)
 
-**"CHARLES, STORYBOARDER IS REVOLUTIONARY. PERHAPS BIGGER THAN JESUS AND WRESTLING. - Saul Bass"**
-Fuck you, Saul Bass. Absolutely bigger than Jesus and wrestling. Also, your work output has really dropped off in recent years.
+## About This Fork
 
-**"HOW COME WHEN I'M DRAWING, I HEAR THE IMPERIAL MARCH?"**
-You're probably boarding on the Simpsons. You might want to escape North Korea through China. If not shot crossing the river, you will probably be sold into slavery by the Chinese. Work for 5 years, buy your freedom and make your way to Seoul. This should fix your issue. You're welcome.
+Storytime is built on [Storyboarder by Wonderunit](https://github.com/wonderunit/storyboarder). The goal is to create the fastest possible workflow for modern storyboarding by integrating AI tools directly into the drawing interface. No switching apps, no manual import/export, no workflow interruption.
 
-## Notes on Open Source License
+If you want stable, production-ready software, use the original Storyboarder. If you want cutting edge integration and don't mind experimental builds, this is for you.
 
-https://wonderunit.com/thoughts-on-free-and-open-source/
+## Credits
 
-## Contributers
+Original Storyboarder: [Wonderunit](https://wonderunit.com/storyboarder/)
+AI Integration: Dan Jones
 
-We would love help on this project. If you are interested in helping out feel free to email charles@wonderunit.com or submit a PR.
+## License
+
+See original Storyboarder license: https://wonderunit.com/thoughts-on-free-and-open-source/
+
+---
+
+**Commands to rename everything:**
+
+```bash
+# 1. First, rename on GitHub:
+# Go to https://github.com/danielcjones2021/scribbler/settings
+# Change "Repository name" to "storytime"
+# Click "Rename"
+
+# 2. Update local git remote (run this after GitHub rename):
+git remote set-url origin https://github.com/danielcjones2021/storytime.git
+
+# 3. Rename your local folder in File Explorer:
+# Desktop\Scribbler → Desktop\Storytime
+
+# 4. Update package.json - change the "name" field to:
+"name": "storytime",
+```
+
+Start with step 1 on GitHub, then run the git command!
