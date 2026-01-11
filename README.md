@@ -112,7 +112,7 @@ No layers. No complexity. Board fast, generate references when needed, keep movi
 
 ## About This Fork
 
-Storytime is built on [Storyboarder by Wonderunit](https://github.com/wonderunit/storyboarder). The goal is to create the fastest possible workflow for modern storyboarding by integrating generative tools directly into the drawing interface. No switching apps, no manual import/export, no workflow interruption.
+Slingshot is built on [Storyboarder by Wonderunit](https://github.com/wonderunit/storyboarder). The goal is to create the fastest possible workflow for modern storyboarding by integrating generative tools directly into the drawing interface. No switching apps, no manual import/export, no workflow interruption.
 
 If you want stable, production-ready software, use the original Storyboarder. If you want cutting edge integration and don't mind experimental builds, this is for you.
 
@@ -125,24 +125,3 @@ AI Integration: Dan Jones
 
 See original Storyboarder license: https://wonderunit.com/thoughts-on-free-and-open-source/
 
----
-
-**Commands to rename everything:**
-
-```bash
-# 1. First, rename on GitHub:
-# Go to https://github.com/danielcjones2021/scribbler/settings
-# Change "Repository name" to "storytime"
-# Click "Rename"
-
-# 2. Update local git remote (run this after GitHub rename):
-git remote set-url origin https://github.com/danielcjones2021/storytime.git
-
-# 3. Rename your local folder in File Explorer:
-# Desktop\Scribbler → Desktop\Storytime
-
-# 4. Update package.json - change the "name" field to:
-"name": "storytime",
-```
-
-Start with step 1 on GitHub, then run the git command!
